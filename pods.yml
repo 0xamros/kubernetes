@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: pod
+metadata:
+  name: apache
+spec:
+  containers:
+  - name: apache
+    image: docker.io/library/httpd
+    ports:
+      containerPort: 80
